@@ -1,0 +1,82 @@
+body {
+    margin: 0; /*Menghapus jarak default browser.*/
+    padding: 0;
+    font-family: arial, sans-serif; /*Menentukan jenis huruf..*/
+    background-color: #f9f9f9; /*warna latar belakang*/
+    display: flex;
+    justify-content: center; /*menempatkan isi halaman ditengah*/
+    align-items: center;
+    height: 100%; /*Tinggi halaman 100% dari layar.*/
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 30px 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 320px;
+}   
+
+.container1 {     /*mengedit judul utama*/
+    text-align: center; /*membuat text ke tengah*/
+    margin-bottom: 20px; /*memberi jarak bawah*/
+    font-size: 1.5rem; /*ukuran font*/
+    color: #333;
+}
+
+#todo-list {
+    list-style-type: none; /*mengilangkan style titik*/
+    padding: 0;
+    margin-bottom: 20px; /*memberi jarak dari bawah*/
+}
+
+#todo-list li{
+    display: flex;
+    align-items: center; /*display: flex; align-items: center; → Agar checkbox & teks sejajar*/
+    padding: 8px 0; /*memberi jarak setiap tugas*/
+    border-bottom: 1px solid #eee;/*memberi garis di setiap jarak tugas*/
+    color: #444;
+}
+
+#todo-list li input[type="checkbox"] {
+    margin-right: 10px; /*memberi jarak ke kanan dari checkbox*/
+    width: 18px; /*membuat checkbox lebar*/
+    height: 18px; /*membuat checkbox tinggi*/
+}
+
+.input-area {
+    display: flex;
+    gap: 10px;
+}
+
+.input-area input {
+    flex-grow: 1;/*membuat placeholder panjang sesuai sisa ruang*/
+    padding: 8px; /*biar teks yang ditulis tidak terlalu mepet dengan placehoder*/
+    border: 1px solid #ccc;
+    border-radius: 6px; /*border & border-radius → Tampilan input jadi halus.*/
+    font-size: 1rem;
+}
+
+.input-area button {
+    padding: 8px 16px;
+    background-color: #ff6464;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0,3s ease;
+}
+    .input-area button:hover {
+        background-color: #fe3e3e;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
